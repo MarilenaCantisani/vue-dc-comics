@@ -3,10 +3,19 @@
     <!--//// Header -->
     <Header />
     <!--//// Main -->
-    <!-- Main content section -->
-    <Content />
-    <!-- Content panel section -->
-    <Panel-content />
+    <main>
+      <!-- Main content section -->
+      <Content />
+      <!-- Content panel section -->
+      <Panel-content />
+    </main>
+    <!--//// Footer -->
+    <footer>
+      <!-- Footer information section -->
+      <Top-footer />
+      <!-- Footer section social profiles -->
+      <Bottom-footer />
+    </footer>
   </div>
 </template>
 
@@ -14,6 +23,8 @@
 import Header from "./components/Header.vue";
 import Content from "./components/Content.vue";
 import PanelContent from "./components/Panel-content.vue";
+import TopFooter from "./components/Top-footer.vue";
+import BottomFooter from "./components/Bottom-footer.vue";
 
 export default {
   name: "App",
@@ -21,6 +32,8 @@ export default {
     Header,
     Content,
     PanelContent,
+    TopFooter,
+    BottomFooter,
   },
 };
 </script>
