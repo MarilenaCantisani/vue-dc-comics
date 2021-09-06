@@ -3,16 +3,11 @@
     <figure><img id="logo" src="@/assets/img/dc-logo.png" alt="logo" /></figure>
     <nav>
       <ul class="uppercase">
-        <li><a href="#">characters</a></li>
-        <li><a id="active" href="#">comics</a></li>
-        <li><a href="#">movies</a></li>
-        <li><a href="#">tv</a></li>
-        <li><a href="#">games</a></li>
-        <li><a href="#">collectibles</a></li>
-        <li><a href="#">videos</a></li>
-        <li><a href="#">fans</a></li>
-        <li><a href="#">news</a></li>
-        <li><a href="#">shop</a></li>
+        <li v-for="(navItem, index) in navItems" :key="index">
+          <a :href="navItem.url" :class="{ active: navItem.current }">
+            {{ navItem.text }}
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -21,6 +16,62 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      navItems: [
+        {
+          text: "Characters",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Comics",
+          url: "#",
+          current: true,
+        },
+        {
+          text: "Movies",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "TV",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Games",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Collectibles",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Videos",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Fans",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "News",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Shop",
+          url: "#",
+          current: false,
+        },
+      ],
+    };
+  },
 };
 </script>
 

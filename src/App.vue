@@ -64,7 +64,7 @@ ul li {
     text-decoration: none;
   }
 }
-#active {
+.active {
   color: #0476f2;
   border-bottom: 1px solid #0476f2;
 }
