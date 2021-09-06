@@ -1,16 +1,26 @@
 <template>
   <div id="app">
+    <!--//// Header -->
     <Header />
+    <!--//// Main -->
+    <!-- Main content section -->
+    <Content />
+    <!-- Content panel section -->
+    <Panel-content />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
+import Content from "./components/Content.vue";
+import PanelContent from "./components/Panel-content.vue";
 
 export default {
   name: "App",
   components: {
     Header,
+    Content,
+    PanelContent,
   },
 };
 </script>
