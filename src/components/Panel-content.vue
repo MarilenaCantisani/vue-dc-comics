@@ -58,28 +58,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#panel-content {
-  background-color: #0476f2;
-  //* List style
-  ul {
-    height: 16vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    //* List items style
-    li a {
-      display: flex;
-      align-items: center;
-      text-transform: uppercase;
-      color: white;
-      font-size: 14px;
-      &:hover {
-        transform: scale(1.1);
-        text-shadow: 0 0 6px white;
-      }
-    }
-  }
-}
+@import "@/assets/scss/general-panel-content-style.scss";
 //// Icons style
 img {
   width: 40px;

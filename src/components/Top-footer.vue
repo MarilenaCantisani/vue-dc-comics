@@ -58,50 +58,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#top-footer {
-  height: 45vh;
-  background-image: url("../assets/img/footer-bg.jpg");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  .container {
-    display: flex;
-    justify-content: space-between;
-    .logo-bg {
-      height: 45vh;
-      width: 600px;
-      background-image: url("../assets/img/dc-logo-bg.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  }
-}
-
-#top-footer .container .row {
-  display: flex;
-  justify-content: space-evenly;
-  .col {
-    margin-top: 40px;
-    margin-right: 30px;
-    h4 {
-      margin: 10px 0;
-      a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 22px;
-        color: white;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-  ul li a {
-    font-size: 14px;
-    color: #959595;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
+@import "@/assets/scss/top-footer/style-top-footer.scss";
 </style>

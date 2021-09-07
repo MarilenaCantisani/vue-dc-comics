@@ -1,0 +1,24 @@
+//// UTILITY
+  //* General
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  ul li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+    }
+  }
+  .active {
+    color: #0476f2;
+    border-bottom: 1px solid #0476f2;
+  }
+  //* Text style
+  .uppercase {
+    text-transform: uppercase;
+  }

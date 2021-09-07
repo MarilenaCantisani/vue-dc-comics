@@ -1,0 +1,17 @@
+//// Footer button style
+#bottom-footer button {
+    border-radius: 0;
+    border: 1px solid #0476f2;
+    padding: 12px 10px;
+    background-color: #303030;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      font-weight: bolder;
+    }
+    &:hover {
+      background-color: #0476f2;
+    }
+  }

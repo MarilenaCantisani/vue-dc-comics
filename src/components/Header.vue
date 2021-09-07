@@ -77,27 +77,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-//// General header style
-header {
-  height: 12vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  //* List style
-  nav ul {
-    display: flex;
-    li a {
-      padding: 10px;
-      color: black;
-      font-size: 14px;
-      font-weight: 600;
-      &:hover {
-        color: #0476f2;
-        border-bottom: 1px solid #0476f2;
-      }
-    }
-  }
-}
+@import "@/assets/scss/general-header-style.scss";
 //* Header logo style
 #logo {
   width: 60px;
