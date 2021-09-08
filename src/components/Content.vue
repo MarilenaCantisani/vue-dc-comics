@@ -1,27 +1,39 @@
 <template>
   <section id="content">
-    <div class="text-content container">Content goes here</div>
+    <div class="spotlight"></div>
+    <article class="comics-container">
+      <ul>
+        <li>
+          <ComicsCard />
+        </li>
+      </ul>
+    </article>
   </section>
 </template>
 
 <script>
+import ComicsCard from "../components/ComicsCard.vue";
 export default {
   name: "Content",
+  props: ["comics"],
+  components: {
+    ComicsCard,
+  },
 };
 </script>
 
 <style scoped lang="scss">
 #content {
   width: 100%;
-  height: 15vh;
   background-color: #1c1c1c;
   display: flex;
   align-items: center;
-  //* Text content style
-  .text-content {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
+  .spotlight {
+    background-image: url("../assets/img/jumbotron.jpg");
+    background-position: top center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
   }
 }
 </style>
