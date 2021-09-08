@@ -1,17 +1,16 @@
 //// Footer button style
 #bottom-footer button {
     border-radius: 0;
-    border: 1px solid #0476f2;
+    border: 1px solid $blue;
     padding: 12px 10px;
-    background-color: #303030;
-    cursor: pointer;
+    background-color: $grey;
     a {
       text-decoration: none;
       text-transform: uppercase;
-      color: white;
+      color: $white;
       font-weight: bolder;
     }
     &:hover {
-      background-color: #0476f2;
+      background-color: $blue;
     }
   }

@@ -1,0 +1,27 @@
+////General style of the section content
+#content {
+    background-color: $darkGrey;
+    position: relative;
+    padding-top: 300px;
+    //*Spotlight
+    .spotlight {
+      background-image: url("../assets/img/jumbotron.jpg");
+      background-position: top center;
+      height: 300px;
+      position: absolute;
+      top: 0;
+    }
+    //* Comics container style
+    .comics-container ul {
+      margin-top: 10px;
+      li {
+        flex-basis: calc(1200px / 6);
+        a {
+          color: $white;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }

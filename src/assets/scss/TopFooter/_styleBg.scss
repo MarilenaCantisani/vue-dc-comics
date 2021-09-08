@@ -1,0 +1,13 @@
+////General style top footer
+#top-footer {
+  height: 45vh;
+  background-image: url("../assets/img/footer-bg.jpg");
+  background-position: top;
+  .container .logo-bg {
+    height: 45vh;
+    width: 600px;
+    background-image: url("../assets/img/dc-logo-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }    
+}

@@ -1,8 +1,10 @@
 <template>
-  <header class="container">
+  <header class="container d-flex j-content-between a-items-center">
+    <!-- Logo -->
     <figure><img id="logo" src="@/assets/img/dc-logo.png" alt="logo" /></figure>
+    <!-- Nav bar -->
     <nav>
-      <ul class="uppercase">
+      <ul class="uppercase d-flex">
         <li v-for="(navItem, index) in navItems" :key="index">
           <a :href="navItem.url" :class="{ active: navItem.current }">
             {{ navItem.text }}
@@ -77,7 +79,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "@/assets/scss/general-header-style.scss";
+//// Variable
+@import "@/assets/scss/GeneralStyle/_vars.scss";
+//// General style header
+@import "@/assets/scss/HeaderStyle/HeaderStyle.scss";
 //* Header logo style
 #logo {
   width: 60px;

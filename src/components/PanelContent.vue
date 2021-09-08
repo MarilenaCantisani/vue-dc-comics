@@ -1,50 +1,10 @@
 <template>
   <section id="panel-content">
-    <ul class="container">
-      <li>
+    <ul class="container d-flex j-content-around a-items-center">
+      <li v-for="(item, index) in itemsPanel" :key="index">
         <a href="#">
-          <img
-            src="@/assets/img/buy-comics-digital-comics.png"
-            alt="digital-comics"
-          />
-          digital comics
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img
-            src="@/assets/img/buy-comics-merchandise.png"
-            alt="comics-merchandise"
-          />
-          dc merchandise
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img
-            src="@/assets/img/buy-comics-subscriptions.png"
-            alt="comics-subscriptions"
-          />
-          subscription
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img
-            class="shop-locator"
-            src="@/assets/img/buy-comics-shop-locator.png"
-            alt="comics-shop-locator"
-          />
-          comic shop locator
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img
-            src="@/assets/img/buy-dc-power-visa.svg"
-            alt="buy-dc-power-visa"
-          />
-          dc power visa
+          <img :src="item.url" :alt="item.text" />
+          {{ item.text }}
         </a>
       </li>
     </ul>
@@ -54,18 +14,44 @@
 <script>
 export default {
   name: "Panel-content",
+  data() {
+    return {
+      itemsPanel: [
+        {
+          url: require("@/assets/img/buy-comics-digital-comics.png"),
+          text: "digital comics",
+        },
+        {
+          url: require("@/assets/img/buy-comics-merchandise.png"),
+          text: "dc merchandise",
+        },
+        {
+          url: require("@/assets/img/buy-comics-subscriptions.png"),
+          text: "subscription",
+        },
+        {
+          url: require("@/assets/img/buy-comics-shop-locator.png"),
+          text: "comic shop locator",
+        },
+        {
+          url: require("@/assets/img/buy-dc-power-visa.svg"),
+          text: "dc power visa",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/general-panel-content-style.scss";
+//// Variable
+@import "@/assets/scss/GeneralStyle/_vars.scss";
+//// General panel content style
+@import "@/assets/scss/PanelContent/PanelContent.scss";
 //// Icons style
 img {
   width: 40px;
   height: auto;
   margin-right: 10px;
-  &.shop-locator {
-    width: 28px;
-  }
 }
 </style>

@@ -129,5 +129,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/scss/general-style/style.scss";
+@import "@/assets/scss/GeneralStyle/style.scss";
 </style>

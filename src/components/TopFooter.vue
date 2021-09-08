@@ -1,7 +1,7 @@
 <template>
-  <section id="top-footer">
-    <div class="container">
-      <div class="row">
+  <section id="top-footer" class="bg-style">
+    <div class="container d-flex j-content-between">
+      <div class="row d-flex j-content-evenly">
         <div class="col">
           <h4><a href="#">dc comics</a></h4>
           <ul>
@@ -58,5 +58,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/top-footer/style-top-footer.scss";
+//// Variable
+@import "@/assets/scss/GeneralStyle/_vars.scss";
+///// Style top footer
+@import "@/assets/scss/TopFooter/StyleTopFooter.scss";
 </style>
