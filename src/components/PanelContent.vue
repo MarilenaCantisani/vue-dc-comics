@@ -3,7 +3,7 @@
     <ul class="container d-flex j-content-around a-items-center">
       <li v-for="(item, index) in itemsPanel" :key="index">
         <a href="#">
-          <img :src="item.url" :alt="item.text" />
+          <img :src="item.url" :alt="item.text" :id="`icon-${index}`" />
           {{ item.text }}
         </a>
       </li>
@@ -50,8 +50,11 @@ export default {
 @import "@/assets/scss/PanelContent/PanelContent.scss";
 //// Icons style
 img {
-  width: 40px;
-  height: auto;
+  width: auto;
+  height: 50px;
   margin-right: 10px;
+}
+#icon-4 {
+  width: 48px;
 }
 </style>
