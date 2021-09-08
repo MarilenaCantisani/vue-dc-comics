@@ -7,14 +7,14 @@
       <!-- Main content section -->
       <Content :comics="comics" />
       <!-- Content panel section -->
-      <Panel-content />
+      <PanelContent />
     </main>
     <!--//// Footer -->
     <footer>
       <!-- Footer information section -->
-      <Top-footer />
+      <TopFooter />
       <!-- Footer section social profiles -->
-      <Bottom-footer />
+      <BottomFooter />
     </footer>
   </div>
 </template>
@@ -22,9 +22,9 @@
 <script>
 import Header from "./components/Header.vue";
 import Content from "./components/Content.vue";
-import PanelContent from "./components/Panel-content.vue";
-import TopFooter from "./components/Top-footer.vue";
-import BottomFooter from "./components/Bottom-footer.vue";
+import PanelContent from "./components/PanelContent.vue";
+import TopFooter from "./components/TopFooter.vue";
+import BottomFooter from "./components/BottomFooter.vue";
 
 export default {
   name: "App",
