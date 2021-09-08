@@ -1,10 +1,15 @@
 <template>
   <section id="content">
+    <!-- Spotlight -->
     <div class="spotlight"></div>
+    <!-- Comic Book section container -->
     <article class="comics-container container">
+      <button class="btn-series">CURRENT SERIES</button>
+
       <ul>
+        <!-- V-for cycle to extract data from all comics -->
         <li v-for="(comic, index) in comics" :key="index">
-          <ComicsCard :comic="comic" />
+          <a href="#"><ComicsCard :comic="comic" /></a>
         </li>
       </ul>
       <div class="button-content">
@@ -43,26 +48,50 @@ export default {
     position: absolute;
     top: 0;
   }
-}
-.comics-container ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-.comics-container ul li {
-  flex-basis: calc(1200px / 6);
+  .comics-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    li {
+      flex-basis: calc(1200px / 6);
+      a {
+        color: white;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 .button-content {
   width: 100%;
   display: flex;
   justify-content: center;
+  button {
+    background-color: #0476f2;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: 0;
+    padding: 10px 60px;
+    margin: 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+      color: #0476f2;
+    }
+  }
 }
-button {
+.btn-series {
+  position: relative;
+  top: -20px;
+  left: -20px;
   background-color: #0476f2;
   color: white;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 20px;
   border: 0;
-  padding: 10px 60px;
-  margin: 30px;
+  padding: 10px 30px;
+  cursor: pointer;
 }
 </style>
